@@ -12,14 +12,14 @@ set -euo pipefail
 
 OUTPUT_FILE="${1:-$HOME/teams_chat_names.txt}"
 
-# Ensure mgc exists
+## Ensure mgc exists
 if ! command -v mgc >/dev/null 2>&1; then
 echo "Microsoft Graph CLI (mgc) not installed."
 echo "Install it with: brew install microsoftgraph/graph/microsoft-graph-cli"
 exit 1
 fi
 
-# Log in (first time opens browser)
+## Log in (first time opens browser)
 mgc login --scopes Chat.Read
 
 echo "Collecting chat names..."
