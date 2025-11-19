@@ -3,5 +3,5 @@ This will allow to get a complete lis of all chats within your org.  Allowing fo
 
 
 To run this scrip:
-bash <ScripName>.sh
+bash ScripName.sh
 
